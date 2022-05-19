@@ -30,7 +30,7 @@ while(True):
         cv.rectangle(frame, (x,y), (x+w, y+h), (255,0,0), 2)
         roi = gray[y:y+w, x:x+w]
         roi_resize = cv.resize(roi, (300,300), interpolation=cv.INTER_AREA)
-        smile_rect = smile_detection.detectMultiScale(roi_resize, scaleFactor=5.0, minNeighbors=15)
+        smile_rect = smile_detection.detectMultiScale(roi_resize, scaleFactor=5.0, minNeighbors=30)
         flag = False
         for (xs, ys, ws, hs) in smile_rect:
             if not flag:
