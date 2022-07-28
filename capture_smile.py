@@ -15,7 +15,7 @@ smile_counter = 0
 counter = 0
 
 # Making while loop for creating video
-while(True):
+while True:
     ret, frame = cap.read()
     frame_copy = frame.copy()
     gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
@@ -58,7 +58,7 @@ while(True):
                 counter += 1
 
 
-    flip = cv.flip(frame, 1)
+    flip = cv.flip(frame,1)
     cv.imshow("Face, smile, face profile detection", flip)
     if cv.waitKey(20) & 0xFF == ord('q'):
         break
