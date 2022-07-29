@@ -1,4 +1,4 @@
-# Smile-detector
+# Smile_Detector
 
 `Smile-detection` is an effective photography support tool for computers with the ability to detect and save people's smiling moments in photo frames. The operation of `Smile-detection` is based on the OpenCV library.
 
